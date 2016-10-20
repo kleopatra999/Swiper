@@ -10,7 +10,7 @@
  * 
  * Licensed under MIT
  * 
- * Released on: October 19, 2016
+ * Released on: October 20, 2016
  */
 (function () {
     'use strict';
@@ -2829,7 +2829,7 @@
                 if (s.params.lazyLoadingInPrevNext) {
                     if (slidesPerLoad > 1 || (s.params.lazyLoadingInPrevNextAmount && s.params.lazyLoadingInPrevNextAmount > 1)) {
                         var amount = s.params.lazyLoadingInPrevNextAmount;
-                        var maxIndex = Math.min(currentLoadIndex + slidesPerLoad, s.slides.length);
+                        var maxIndex = Math.min(currentLoadIndex + slidesPerLoad + amount, s.slides.length);
                         var minIndex = Math.max(currentLoadIndex - Math.max(slidesPerLoad, amount), 0);
                         // Next Slides
                         for (i = currentLoadIndex; i < maxIndex; i++) {
