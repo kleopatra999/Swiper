@@ -43,6 +43,10 @@ s.lazy = {
 
                 }
 
+                if(!s) {
+                  return;
+                }
+
                 _img.addClass(s.params.lazyStatusLoadedClass).removeClass(s.params.lazyStatusLoadingClass);
                 slide.find('.' + s.params.lazyPreloaderClass + ', .' + s.params.preloaderClass).remove();
                 if (s.params.loop && loadInDuplicate) {
