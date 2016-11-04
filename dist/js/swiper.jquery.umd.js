@@ -10,7 +10,7 @@
  * 
  * Licensed under MIT
  * 
- * Released on: October 20, 2016
+ * Released on: November 3, 2016
  */
 (function (root, factory) {
 	'use strict';
@@ -2798,6 +2798,10 @@
                                 _img.removeAttr('data-src');
                             }
         
+                        }
+        
+                        if(!s) {
+                          return;
                         }
         
                         _img.addClass(s.params.lazyStatusLoadedClass).removeClass(s.params.lazyStatusLoadingClass);
